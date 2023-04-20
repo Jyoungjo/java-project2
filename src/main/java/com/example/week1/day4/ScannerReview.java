@@ -1,13 +1,10 @@
-package com.example.week1;
+package com.example.week1.day4;
 
 import java.util.Scanner;
 
-public class ScannerEx {
+public class ScannerReview {
     public void readTwoNumbersAndPlus() {
-        // 숫자 2개 입력 받기
         Scanner sc = new Scanner(System.in);
         System.out.println(sc.nextInt() + sc.nextInt());
     }
-
-
 }
