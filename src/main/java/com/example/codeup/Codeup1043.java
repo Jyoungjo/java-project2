@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Codeup1043 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        int numA = sc.nextInt();
+        int numB = sc.nextInt();
 
-        System.out.printf("%d", a % b);
+        System.out.printf("%d", numA % numB);
     }
 }

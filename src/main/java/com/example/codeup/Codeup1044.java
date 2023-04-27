@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Codeup1044 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
+        int numA = sc.nextInt();
 
-        System.out.printf("%d", (long) a + 1);
+        System.out.printf("%d", (long) numA + 1);
     }
 }

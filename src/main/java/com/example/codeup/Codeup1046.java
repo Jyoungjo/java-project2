@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Codeup1046 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+        int numA = sc.nextInt();
+        int numB = sc.nextInt();
+        int numC = sc.nextInt();
 
-        System.out.printf("%d\n%.1f", a + b + c, (float) (a + b + c) / 3);
+        System.out.printf("%d\n%.1f", numA + numB + numC, (float) (numA + numB + numC) / 3);
     }
 }
