@@ -6,6 +6,6 @@ public class LoopAscii {
             System.out.printf("%d:%c ", c, c);
         }
         System.out.println("-------");
-        // System.out.printf("%c\n", 222222222); -> 범위 벗어나면 오류
+        // System.out.printf("%c\n", 222222222); -> utf-16코드 범위 벗어나면 오류
     }
 }
