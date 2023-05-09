@@ -1,6 +1,7 @@
 package com.example.week4.day2;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class SugarSnack {
     private int[][] arr;
@@ -9,9 +10,9 @@ public class SugarSnack {
         this.arr = new int[rowCnt][colCnt];
     }
 
-    public void setBeam(int l, int direction, int x, int y) {
+    public void setBeam(int l, int d, int x, int y) {
         for (int i = 0; i < l; i++) {
-            if(direction == 0) { // 가로
+            if(d == 0) { // 가로
                 arr[x - 1][y + i - 1] = 1;
             } else { // 세로
                 arr[x + i - 1][y - 1] = 1;
@@ -27,15 +28,20 @@ public class SugarSnack {
     }
 
     public static void main(String[] args) {
-        int rowCnt = 5;
-        int colCnt = 5;
+        Scanner sc = new Scanner(System.in);
+        int rowCnt = sc.nextInt();
+        int colCnt = sc.nextInt();
         SugarSnack sugarSnack = new SugarSnack(rowCnt, colCnt);
-        sugarSnack.printArr();
-        sugarSnack.setBeam(2, 0, 1, 1);
-        sugarSnack.printArr();
-        sugarSnack.setBeam(3, 1, 2, 3);
-        sugarSnack.printArr();
-        sugarSnack.setBeam(4, 1, 2, 5);
+
+        int cnt = sc.nextInt();
+
+        for (int i = 0; i < cnt; i++) {
+            int l = sc.nextInt();
+            int d = sc.nextInt();
+            int x = sc.nextInt();
+            int y = sc.nextInt();
+            sugarSnack.setBeam(l, d, x, y);
+        }
         sugarSnack.printArr();
     }
 }
